@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #0B5394;
+    color: #FFFFFF;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #041E42;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 26px;
+    letter-spacing: 1px;
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 5%;
+}
+
+.user-icons img {
+    margin-left: 15px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1000px;
+    gap: 40px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.image img {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    max-width: 500px;
+}
+
+.buttons button {
+    background-color: #041E42;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 45%;
+    text-align: center;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.buttons button:hover {
+    background-color: #063E6B;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.heart-icon img {
+    width: 40px;
+    height: auto;
+}
+
+/* Estilos anteriores */
+
+.info-section {
+    background-color: #FFFFFF;
+    color: #0B5394;
+    padding: 40px;
+    text-align: center;
+}
+
+.info-section h2 {
+    margin-bottom: 20px;
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.info-section p,
+.info-section ul {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #333333;
+}
+
+.info-section ul {
+    list-style-type: disc;
+    padding-left: 40px;
+    text-align: left;
+}
+
+li {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #333333;
+}
+
+.services-section {
+    background-color: #e7e5e5;
+    padding: 40px;
+    text-align: center;
+}
+
+.services-section h2 {
+    margin-bottom: 20px;
+    color: #0B5394;
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between; /* Espaça uniformemente os cartões */
+    align-items: flex-start;
+    flex-wrap: nowrap; /* Evita que os itens quebrem de linha */
+    gap: 20px; /* Adiciona um pequeno espaço entre os itens */
+    padding: 20px 0;
+    margin: 0 20px; /* Adiciona margem nas laterais para evitar que encoste nas bordas */
+}
+
+.service {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%; /* Ajusta a largura para que caibam três itens lado a lado */
+    min-width: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Ajuste da responsividade para telas menores */
+@media (max-width: 768px) {
+    .services {
+        flex-wrap: wrap; /* Permite que os itens quebrem de linha em telas pequenas */
+        justify-content: center; /* Centraliza os itens quando em duas ou mais linhas */
+    }
+
+    .service {
+        width: 100%; /* Itens ocupam toda a largura disponível */
+        margin-bottom: 20px;
+    }
+}
+
+
+
+.service h3 {
+    color: #041E42;
+    margin-bottom: 10px;
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.service p {
+    font-size: 16px;
+    color: #333333;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer {
+    background-color: #041E42;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .heart-icon img {
+    width: 40px;
+    height: auto;
+}
+
+#mind img{
+    width: 35px;
+    height: 35px;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #041E42;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid;  /* creates padding around scroll thumb */
+  }
